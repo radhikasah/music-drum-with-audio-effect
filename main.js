@@ -1,10 +1,10 @@
 
+//--------------------details of songs----------------------------------------------
 
-
-var songs = [{
+var songs = [{            // hamne ek variable bana yeh SONG jiske under songs ka list or array he PASS kararahe through object
         'name': 'Marne Kasailai Rahar Hudaina (Title Track)',
         'artist': 'Prem Pariayr,Dr. KrishnaHari Baral,Gaire Suresh',
-        'album': '(Nai nabhannu la 2',
+        'album': 'Nai nabhannu la 2',
         'duration': '3:32',
        'fileName': 'song1.mp3',
 	   'image' :'song1.jpg'
@@ -34,7 +34,7 @@ var songs = [{
 		'image' :'song4.jpg'
     }]
 	
-
+//--------------------------------------end of songs list
 
 
 
@@ -88,12 +88,12 @@ function randomExcluded(min, max, excluded) {
 
 									function fancyTimeFormat(time)
 								 					{
-								 						// Hours, minutes and seconds
+								 						//yeh  Hours, minutes and seconds me convert karraha he
 								 						var hrs = ~~(time / 3600);
 								 						var mins = ~~((time % 3600) / 60);
 								 						var secs = time % 60;
 
-								 						// Output like "1:01" or "4:03:59" or "123:03:59"
+								 						//  Output like "1:01" or "4:03:59" or "123:03:59"
 								 						var ret = "";
 
 								 						if (hrs > 0) {
@@ -140,9 +140,9 @@ function randomExcluded(min, max, excluded) {
 								 					}
 
 
-								 					function addSongNameClickEvent(songObj,position) {
+								 					function addSongNameClickEvent(songObj,position) {			// //ye function different song ke different position ke accourding work kare ga
 								 				    var songName = songObj.fileName; // New Variable
-								 					var id = '#song' + position;
+								 					var id = '#song' + position;	//
 								 							$(id).click(function() {
 								 							var audio = document.querySelector('audio');
 								 							var currentSong = audio.src;
@@ -230,32 +230,21 @@ $('.fa-bars').on('click',function(){
  $('.play-icon').on('click', function() {
         toggleSong();
     });
-		$('body').on('keypress',function(event) {
-			// body pe kahi pe bhi key press karne pe yeh function chalo//
+		$('body').on('keypress',function(event) {			// body pe kahi pe bhi key press karne pe yeh function chalo//
+			
 		var target = event.target;
-		if (event.keyCode == 32 && target.tagName !='INPUT')
+		if (event.keyCode == 32 && target.tagName !='INPUT') // if event.keycode equal to 32 and  traget.name is not eqal to intupt than toggleSong chalo nahi to nhi chalo
 		{
-			toggleSong();
+			toggleSong(); 				
 		}
 	});
 										
 																
-																
-															/*	$('.play-icon').on('click', function() {
-								 							toggleSong();
-								 						});
+		/*Drumkit*/
 
 
-
-								 						$('body').on('keypress', function(event) {
-								 									if (event.keyCode == 32) {
-								 										toggleSong();
-								 									}
-								 								}); */
-																
-/*Drumkit*/
-
-
+	
+	
 	// Onclick functions
 	function clap() {
 		var clap = document.querySelector("audio");
