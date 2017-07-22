@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+	<title>Drum Kit With Audio Effect</title>     <!--Title of the App-->
+<link rel="stylesheet" type="text/css" href="font-awesome.css">
+	    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.15/css/jquery.dataTables.min.css">
+	    <link rel="stylesheet" type="text/css" href="main.css">
+			<link rel="stylesheet" type="text/css" href="css/normalize.css">
+		<!--<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.3.0/css/font-awesome.min.css">-->
+</head>
+<body>                <!--Body-->
+	<div class="wrapper"><!--Start of Div1-->
+		<section class="welcome-screen hidden"><!--Section1-->
+			<h1>Welcome to Songify</h1>
+			<h3>Enter name to access your account</h3>
+			<div class="input-wrapper">    <!--Start of Div2-->
+				<input id="name-input" placeholder="Name" type="text">
+				 <button>Go</button>
+			</div><!--End of Div2-->
+		</section><!--End of Section1-->
+		<header>
+			<div class="right floated user-name"></div>
+		</header>
+
+		<div class="main"><!--Start of Div3-->
+			<section class="content"><!--Section2-->
+
+				<audio src="song.mp3"></audio>
+
+				<table id="songs">
+				                <thead class="list-headers"><!--Displaying the Song list Header Details-->
+													<td> Title </td >
+													<td> Artist </td>
+													<td> Album </td>
+													<td> Duration </td>
+											</thead>
+
+
+													<tbody class="song-list"><!--Displaying the Songs info-->
+													<tr class="song" id="song1">
+													<td class="song-name"></td >
+													<td  class="song-artist"></td >
+													<td  class="song-album"></td >
+													<td  class="song-length"></td >
+											    </tr>
+
+								                    <tr class="song" id="song2">
+													<td class="song-name"></td >
+													<td  class="song-artist"></td >
+													<td  class="song-album"></td >
+													<td  class="song-length"></td >
+											    </tr>
+
+								                    <tr class="song" id="song3">
+													<td class="song-name"></td >
+													<td  class="song-artist"></td >
+													<td  class="song-album"></td >
+													<td  class="song-length"></td >
+											     </tr>
+
+								                  <tr class="song" id="song4">
+													<td class="song-name"></td >
+													<td  class="song-artist"></td >
+													<td  class="song-album"></td >
+													<td  class="song-length"></td >
+											     </tr>
+
+								                   <tr class="song" id="song5">
+													<td class="song-name"></td >
+													<td  class="song-artist"></td >
+													<td  class="song-album"></td >
+													<td  class="song-length"></td >
+											      </tr>
+
+								                  <tr class="song" id="song6">
+													<td class="song-name"></td >
+													<td  class="song-artist"></td >
+													<td  class="song-album"></td >
+													<td  class="song-length"></td >
+											      </tr>
+
+								                  <tr class="song" id="song7">
+													<td class="song-name"></td >
+													<td  class="song-artist"></td >
+													<td  class="song-album"></td >
+													<td  class="song-length"></td >
+										        </tr>
+
+								                   <tr class="song" id="song8">
+													<td class="song-name"></td >
+													<td  class="song-artist"></td >
+													<td  class="song-album"></td >
+													<td  class="song-length"></td >
+											      </tr>
+								</tbody>
+							</table><!--End of the Table-->
+
+
+								<div class="current-song-wrapper">    <!--Start of div4--> <!--Displaying the Current Song Details-->
+							<img class="current-song-image">
+							<div><!--Start of div5-->
+							<p class="current-song-name"></p>
+							<p class="current-song-album"></p>
+						</div><!--End of div5-->
+					</div><!--End of div4-->
+
+
+
+			</section>              <!--End of Section2-->
+			<section class="Drumkit hidden">
+<div class="effects">
+
+	<div class=""></div>
+	<div class=""></div>
+	<div class=""></div>
+	<div class=></div>
+
+
+
+</div>
+  <div class="keys">
+    <div data-key="65" class="key">
+      <kbd>A</kbd>
+      <span id="clap" onclick="clap()" class="sound">clap</span>
+    </div>
+    <div data-key="83" class="key">
+      <kbd>S</kbd>
+      <span id="hihat" onclick="hihat()" class="sound">hihat</span>
+    </div>
+    <div data-key="68" class="key">
+      <kbd>D</kbd>
+      <span id="kick" onclick="kick()" class="sound">kick</span>
+    </div>
+    <div data-key="70" class="key">
+      <kbd>F</kbd>
+      <span id="openhat" onclick="openhat()" class="sound">openhat</span>
+    </div>
+    <div data-key="71" class="key">
+      <kbd>G</kbd>
+      <span id="boom" onclick="boom()" class="sound">boom</span>
+    </div>
+    <div data-key="72" class="key">
+      <kbd>H</kbd>
+      <span id="ride" onclick="ride()" class="sound">ride</span>
+    </div>
+    <div data-key="74" class="key">
+      <kbd>J</kbd>
+      <span id="snare" onclick="snare()" class="sound">snare</span>
+    </div>
+    <div data-key="75" class="key">
+      <kbd>K</kbd>
+      <span id="tom" onclick="tom()" class="sound">tom</span>
+    </div>
+    <div data-key="76" class="key">
+      <kbd>L</kbd>
+      <span id="tink" onclick="tink()" class="sound">tink</span>
+    </div>
+  </div>
+
+  <audio data-key="65" src="sounds/clap.wav"></audio>
+  <audio data-key="83" src="sounds/hihat.wav"></audio>
+  <audio data-key="68" src="sounds/kick.wav"></audio>
+  <audio data-key="70" src="sounds/openhat.wav"></audio>
+  <audio data-key="71" src="sounds/boom.wav"></audio>
+  <audio data-key="72" src="sounds/ride.wav"></audio>
+  <audio data-key="74" src="sounds/snare.wav"></audio>
+  <audio data-key="75" src="sounds/tom.wav"></audio>
+  <audio data-key="76" src="sounds/tink.wav"></audio>
+
+
+			</section>
+			<footer>  <!--Footer contained various controls-->
+				<div class="controls"><!--Start of div6-->
+					<div class="player-buttons"><!--Start of div7-->
+						<i class="fa fa-random clickable disabled" aria-hidden="true"></i>
+	      <i class="fa fa-step-backward clickable" aria-hidden="true"></i>
+	      <i class="fa fa-play clickable play-icon" aria-hidden="true"></i>
+	      <i class="fa fa-step-forward clickable" aria-hidden="true"></i>
+	      <i class="fa fa-repeat disabled clickable" aria-hidden="true"></i>
+					</div><!--End of div7-->
+					<div class="progress-wrapper"><!--Start of div8-->
+						<span class="time-elapsed"></span>
+						<div class="player-progress"><!--Start of div9-->
+							<div class="progress-filled"></div>
+						</div><!--End of div9-->
+						<span class="song-duration"></span>
+					</div><!--End of div6-->
+				</div><!--End of div8-->
+			</footer><!--End of footer-->
+
+</div><!--End of div3-->
+</div><!--End of div1-->
+	<script src="jquery.js">
+	</script>
+<script src="https://cdn.datatables.net/1.10.15/js/jquery.dataTables.min.js">
+    </script>
+	<script src="main.js">
+	</script>
+</body>
+</html>
