@@ -47,8 +47,7 @@ background:url(img/image1.gif) bottom center;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	background:url(img/image3.jpg) bottom center;
-	background-size:cover;
+	background: linear-gradient(to right, #F44336, rgba(233, 30, 99, 0.69), #F44336);
 	
 }
 

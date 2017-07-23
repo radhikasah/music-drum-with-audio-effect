@@ -34,7 +34,7 @@ var songs = [{            // hamne ek variable bana yeh SONG jiske under songs k
 		'image' :'song4.jpg'
     }]
 	
-//--------------------------------------end of songs list
+//--------------------------------------end of songs list-------------------------------------//
 
 
 
@@ -140,8 +140,8 @@ function randomExcluded(min, max, excluded) {
 								 					}
 
 
-								 					function addSongNameClickEvent(songObj,position) {			// //ye function different song ke different position ke accourding work kare ga
-								 				    var songName = songObj.fileName; // New Variable
+								 					function addSongNameClickEvent(songObj,position) {			//ye function different song ke different position ke accourding work kare ga
+													var songName = songObj.fileName; // New Variable
 								 					var id = '#song' + position;	//
 								 							$(id).click(function() {
 								 							var audio = document.querySelector('audio');
@@ -161,7 +161,7 @@ function randomExcluded(min, max, excluded) {
 
 								 								
 
-
+//----------------------------------------loop is starts---------------------------------------------//
 
 
 								 				                window.onload = function() {
@@ -245,8 +245,8 @@ $('.fa-bars').on('click',function(){
 
 	
 	
-	// Onclick functions
-	/*function clap() {
+	// starts of Onclick functions
+	function clap() {
 		var clap = document.querySelector("audio");
 console.log(clap);
 		clap.src="sounds/clap.wav";
@@ -322,7 +322,7 @@ console.log(clap.src);
 		const key = document.querySelector(".key[data-key='76']");
 		key.classList.add('playing');
 
-	} */
+	} 
 
 function removeTransition(e) {
   if(e.propertyName !== 'transform') return; // skip it if it's not a transform
