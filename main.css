@@ -47,7 +47,7 @@ background:url(img/image1.gif) bottom center;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	background:url(img/image7.jpg) bottom center;
+	background:url(img/image3.jpg) bottom center;
 	background-size:cover;
 	
 }
@@ -58,9 +58,9 @@ background:url(img/image1.gif) bottom center;
 	display: flex;
 	flex-direction: column;
 	color: pink;
-	/*background:url(img/image4.jpg) bottom center;*/
+	background:url(img/image7.gif) bottom center;
 	background-size:cover;
-	background-color:pink;
+	
 }
 
 .main header {

@@ -246,7 +246,7 @@ $('.fa-bars').on('click',function(){
 	
 	
 	// Onclick functions
-	function clap() {
+	/*function clap() {
 		var clap = document.querySelector("audio");
 console.log(clap);
 		clap.src="sounds/clap.wav";
@@ -322,7 +322,7 @@ console.log(clap.src);
 		const key = document.querySelector(".key[data-key='76']");
 		key.classList.add('playing');
 
-	}
+	} */
 
 function removeTransition(e) {
   if(e.propertyName !== 'transform') return; // skip it if it's not a transform
