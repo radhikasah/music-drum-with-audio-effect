@@ -15,7 +15,7 @@
 <body>                <!--Body-->
 	<div class="wrapper"><!--Start of Div1-->
 		<section class="welcome-screen "><!--Section1-->
-			<h1>Welcome to Songify</h1>
+			<h1>Welcome to Music World</h1>
 			<h3>Enter name to access your account</h3>
 			<div class="input-wrapper">    <!--Start of Div2-->
 				<input id="name-input" placeholder="Name" type="text">
@@ -30,7 +30,8 @@
 			<section class="content "><!--Section2-->
 
 				<audio src="song.mp3"></audio>
-
+				
+				<!-----------------------------------start of the table--------------------------->
 				<table id="songs">
 				                <thead class="list-headers"><!--Displaying the Song list Header Details-->
 													<td> Title </td >
@@ -71,22 +72,28 @@
 
 								          
 								</tbody>
-							</table><!--End of the Table-->
-
-
-								<div class="current-song-wrapper">    <!--Start of div4--> <!--Displaying the Current Song Details-->
+							</table>
+		
+					<!--------------------End of the Table---------------------------------------------->
+								
+					<!-------------Start of div4--> <!--Displaying the Current Song Details--------------------->			
+								<div class="current-song-wrapper">    
 							<img class="current-song-image">
 							<div><!--Start of div5-->
 							<p class="current-song-name"></p>
 							<p class="current-song-album"></p>
 						</div><!--End of div5-->
-					</div><!--End of div4-->
+					</div>
+					<!--End of div4-->
 
 
 
-			</section>              <!--End of Section2-->
+			</section> 
+         
+			<!--End of Section2--> 
+		<!----------------------------starts the part of  drumkit------------------------------>
 			<section class="Drumkit hidden">
-
+			<!----------starts of audio effects-------------->	
 	<div class="effect a">Cabinet</div>
 	<div class="effect b">Chorus</div>
 	<div class="effect c">Moog Filte</div>
@@ -141,6 +148,9 @@
   <audio data-key="76" src="sounds/tink.wav"></audio>
 
 </section>
+<!----------------------------end of the drumkit---------------------------------------------->
+
+
 
 			<footer>  <!--Footer contained various controls-->
 				<div class="controls"><!--Start of div6-->

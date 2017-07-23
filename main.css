@@ -20,6 +20,7 @@ body {
 h1 {
 	border: 0;
 	margin: 0;
+	color:white;
 }
 .Drumkit{
 	
@@ -46,7 +47,7 @@ background:url(img/image1.gif) bottom center;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	background:url(img/image3.jpg) bottom center;
+	background:url(img/image7.jpg) bottom center;
 	background-size:cover;
 	
 }
@@ -56,10 +57,10 @@ background:url(img/image1.gif) bottom center;
 	height: 100%;
 	display: flex;
 	flex-direction: column;
-	color: white;
-	background:url(img/image7.gif) bottom center;
+	color: pink;
+	/*background:url(img/image4.jpg) bottom center;*/
 	background-size:cover;
-	
+	background-color:pink;
 }
 
 .main header {
@@ -71,7 +72,7 @@ background:url(img/image1.gif) bottom center;
 
 .main .content {
 	flex: 1;
-	background:url(img/image4.jpg) bottom center;
+	background:url(img/image7.jpg) bottom center;
 	background-size:cover;
 	
 }
@@ -106,6 +107,7 @@ background:url(img/image1.gif) bottom center;
 
 .right.floated {
 	float: right;
+	color:white;
 }
 
 .clickable {
